@@ -1,5 +1,5 @@
-a = int(input('первое число:'))
-b = int(input('второе число:'))
+a = int(input('первое число: '))
+b = int(input('второе число: '))
 print('Ответ:', a+b)
 print('Ответ:', a-b)
 print('Ответ:', a*b)
