@@ -15,12 +15,22 @@ def div(first_number, second_number):
     return first_number / second_number
 
 if __name__ == "__main__":
-    # Запрашиваем данные у пользователя (преобразуем введенную строку в целое число)
-    first_number = int(input('Введите первое число: '))
-    second_number = int(input('Введите второе число: '))
+    first_input = input('Введите первое число: ')
+    second_input = input('Введите второе число: ')
     
-    # Выводим результаты с понятными текстовыми пояснениями
-    print(f"Результат сложения ({first_number} + {second_number}) = {add(first_number, second_number)}")
-    print(f"Результат вычитания ({first_number} - {second_number}) = {sub(first_number, second_number)}")
-    print(f"Результат умножения ({first_number} * {second_number}) = {mul(first_number, second_number)}")
-    print(f"Результат деления ({first_number} / {second_number}) = {div(first_number, second_number)}")
+    # Проверяем через IF: состоят ли введенные строки только из цифр?
+    if not first_input.isdigit() or not second_input.isdigit():
+        print("Ошибка: Пожалуйста, вводите только числа, а не буквы!")
+    else:
+        first_number = int(first_input)
+        second_number = int(second_input)
+        
+        print(f"Результат сложения ({first_number} + {second_number}) = {add(first_number, second_number)}")
+        print(f"Результат вычитания ({first_number} - {second_number}) = {sub(first_number, second_number)}")
+        print(f"Результат умножения ({first_number} * {second_number}) = {mul(first_number, second_number)}")
+        
+        # Проверяем, не равен ли делитель нулю
+        if second_number == 0:
+            print("Ошибка: на 0 делить нельзя!")
+        else:
+            print(f"Результат деления ({first_number} / {second_number}) = {div(first_number, second_number)}")
