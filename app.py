@@ -1,15 +1,16 @@
-def add(a, b):
-    return a+b
+def add(first_number, second_number):
+    return first_number + second_number
 
-def sub(a, b):
-    return a-b
+def sub(first_number, second_number):
+    return first_number - second_number
 
-def mul(a, b):
-    return a*b
+def mul(first_number, second_number):
+    return first_number * second_number
 
 if __name__ == "__main__":
-    a = int(input('первое число: '))
-    b = int(input('второе число: '))
-    print('Ответ:', add(a,b))
-    print('Ответ:', sub(a,b))
-    print('Ответ:', mul(a,b))
+    first_number = int(input('Введите первое число: '))
+    second_number = int(input('Введите второе число: '))
+    
+    print('Ответ:', add(first_number, second_number))
+    print('Ответ:', sub(first_number, second_number))
+    print('Ответ:', mul(first_number, second_number))
