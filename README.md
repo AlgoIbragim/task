@@ -1,1 +1,1 @@
-# task
+[![Python Tests](https://github.com/AlgoIbragim/task/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/AlgoIbragim/task/actions/workflows/tests.yml)
