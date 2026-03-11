@@ -15,7 +15,7 @@ if __name__ == "__main__":
     first_number = int(input('Введите первое число: '))
     second_number = int(input('Введите второе число: '))
     
-    # Поочередно вызываем функции и выводим результаты в консоль
-    print('Ответ:', add(first_number, second_number))
-    print('Ответ:', sub(first_number, second_number))
-    print('Ответ:', mul(first_number, second_number))
+    # Выводим результаты с понятными текстовыми пояснениями
+    print(f"Результат сложения ({first_number} + {second_number}): {add(first_number, second_number)}")
+    print(f"Результат вычитания ({first_number} - {second_number}): {sub(first_number, second_number)}")
+    print(f"Результат умножения ({first_number} * {second_number}): {mul(first_number, second_number)}")
